@@ -32,7 +32,7 @@ h6 {
   font-weight: 700;
   line-height: 1.2;
   margin-top: 0;
-  margin-bottom: 0.5em;
+  margin-bottom: 18px
 }
 
 .display-heading,
@@ -249,14 +249,33 @@ header {
 
 /* banner-start */
 .hero {
-  background-image: url('../images/banner/banner.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 800px;
-  display: flex;
-  align-items: center;
-  position: relative;
+    background-image: url(../images/banner/banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    position: relative;                /* Important: parent must be relative */
+    overflow: hidden;
+}
+
+/* Background overlay */
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 7%);
+    z-index: 1;
+}
+
+/* Ensure content stays above the overlay */
+.hero > * {
+    position: relative;
+    z-index: 2;
 }
 
 @media (max-width: 1024px) {
@@ -282,10 +301,10 @@ header {
 }
 
 .content p {
-  width: 50%;
+  width: 44%;
   color: black;
   line-height: 1.8;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 .buttons {
@@ -295,13 +314,14 @@ header {
 }
 
 .btn {
-  padding: 14px 34px;
+  padding: 8px 34px;
   font-size: 18px;
   font-weight: 400;
   text-decoration: none;
   border-radius: 4px;
   display: inline-block;
   transition: all 0.3s;
+  letter-spacing: 2px;
 }
 
 .btn-shop {
@@ -465,8 +485,8 @@ header {
   transform: translateX(-50%);
   background: #D4D4D4;
   color: rgb(0, 0, 0);
-  padding: 10px 60px;
-  border-radius: 4px;
+  padding: 8px 70px;
+  border-radius: 5px;
   font-weight: 400;
   text-transform: uppercase;
   font-size: 18px;
@@ -475,6 +495,8 @@ header {
   white-space: nowrap;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   transition: all 0.3s;
+  width: 80%;
+  letter-spacing: 2px;
 }
 
 section.Categories-featured {
@@ -487,8 +509,8 @@ section.Categories-featured {
 
 .slick-prev,
 .slick-next {
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   background: #ff9800 !important;
   border: none;
   border-radius: 50% !important;
@@ -498,7 +520,7 @@ section.Categories-featured {
   justify-content: center;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   position: absolute;
-  top: 50%;
+  top: 40%;
   cursor: pointer;
 }
 
@@ -514,7 +536,7 @@ section.Categories-featured {
 .slick-next:before {
   font-family: "Font Awesome 6 Free";
   font-weight: 900;
-  font-size: 24px;
+  font-size: 30px;
   color: rgb(0, 0, 0);
 }
 
@@ -647,13 +669,13 @@ section.Categories-featured {
 
 .xpro_prev_arrow,
 .xpro_next_arrow {
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   background: #fb923c;
   color: rgb(0, 0, 0);
   border: none;
   border-radius: 50%;
-  font-size: 20px;
+  font-size: 30px;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -692,13 +714,12 @@ section.Categories-featured {
 .xpro_red_badge {
   position: absolute;
   top: 12px;
-  left: 70%;
-  transform: translateX(-50%);
+  left: 65%;
   background: #ef4444;
   color: white;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 700;
-  padding: 1px 10px;
+  padding: 5px 10px;
   border-radius: 25px;
 }
 
@@ -746,7 +767,8 @@ section.Categories-featured {
   color: #ff9344;
   font-size: 16px;
   margin-left: 8px;
-  font-weight: normal;
+  font-weight: 300;
+  text-decoration: line-through;
 }
 
 .xpro_orange_btn {
@@ -754,13 +776,14 @@ section.Categories-featured {
   color: rgb(0, 0, 0);
   border: none;
   padding: 14px;
-  border-radius: 12px;
+  border-radius: 5px;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 18px;
   width: 100%;
   cursor: pointer;
   margin-bottom: 10px;
   transition: 0.3s;
+  letter-spacing: 2px;
 }
 
 
@@ -770,11 +793,13 @@ section.Categories-featured {
   border: 1px solid #ff9344;
   color: #ff9344;
   padding: 12px;
-  border-radius: 12px;
+  border-radius: 5px;
   width: 100%;
   cursor: pointer;
+  font-size: 18px;
   font-weight: 400;
   transition: 0.3s;
+  letter-spacing: 2px;
 }
 
 @media (min-width:1200px) and (max-width:1400px) {
@@ -993,7 +1018,7 @@ section.new-cta {
 .text-content h2 {
   font-size: 50px;
   margin: 0 0 20px 0;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1.1;
 }
 
@@ -1005,24 +1030,25 @@ section.new-cta {
 }
 
 .cta {
-  padding: 14px 36px;
-  background: transparent;
-  color: white;
+  padding: 10px 60px;
+  background: white;
+  color: rgb(0, 0, 0);
   border: 2px solid white;
   border-radius: 4px;
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 18px;
+  font-weight: 500;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 1px;
   white-space: nowrap;
   transition: all 0.3s ease;
+  letter-spacing: 2px;
 }
 
-.cta:hover {
+/* .cta:hover {
   background: white;
   color: #222;
-}
+} */
 
 /* Mobile */
 @media (max-width: 992px) {
@@ -1117,10 +1143,10 @@ section.our-product h2 {
   right: 15px;
   background: #ff3b30;
   color: white;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: bold;
-  padding: 5px 12px;
-  border-radius: 20px;
+  padding: 3px 24px;
+  border-radius: 50px;
 }
 
 .product-info {
@@ -1155,20 +1181,20 @@ span.revrating {
   color: #FE9627;
   font-weight: normal;
   margin-left: 8px;
+  text-decoration: line-through;
 }
 
 .btn-card {
   display: block;
-
   padding: 12px;
   background: #FE9627;
   color: black;
   text-align: center;
   text-decoration: none;
-
   border-radius: 8px;
   margin-bottom: 10px;
   transition: background 0.3s;
+  letter-spacing: 2px;
 }
 
 .btn:hover {
@@ -1177,7 +1203,6 @@ span.revrating {
 
 .view-more {
   display: block;
-
   padding: 12px;
   color: #FE9627;
   border: 1px solid #FE9627;
@@ -1186,6 +1211,7 @@ span.revrating {
   border-radius: 8px;
   margin-bottom: 10px;
   transition: background 0.3s;
+  letter-spacing: 2px;
 }
 
 .view-all {
@@ -1199,6 +1225,7 @@ span.revrating {
   color: #000000;
   text-decoration: none;
   transition: all 0.3s;
+  letter-spacing: 2px;
 }
 
 
@@ -1242,7 +1269,7 @@ span.revrating {
 /* payment starat */
 .guarantee-bar {
   position: relative;
-  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+  background: black
     url('../images/banner/paymet-cta.png') center/cover no-repeat;
   color: #fff;
   padding: 80px 20px;
@@ -1588,7 +1615,7 @@ input[type="email"]::placeholder {
 
 .subscribe-form button {
   padding: 18px 40px;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
   background-color: #ff8c00;
   color: rgb(0, 0, 0);
@@ -1596,6 +1623,11 @@ input[type="email"]::placeholder {
   cursor: pointer;
   width: 40%;
   margin: auto;
+  letter-spacing: 2px;
+}
+.subscribe-form input::placeholder {
+    color: #000000;
+    opacity: 1;
 }
 
 
@@ -1672,14 +1704,14 @@ input[type="email"]::placeholder {
 }
 
 .left h2 {
-  font-size: 36px;
+  font-size: 40px;
   margin-bottom: 10px;
   color: black;
 }
 
 .left span {
   display: block;
-  width: 60px;
+  width: 84px;
   height: 3px;
   background: orange;
   margin-bottom: 20px;
@@ -1783,47 +1815,73 @@ textarea {
 
 /* insagram */
 .instagram-section {
-  padding: 60px 0;
-  text-align: center;
+    padding: 60px 0;
+    text-align: center;
 }
 
 .insta-title {
-  font-size: 50px;
-  font-weight: 600;
-  margin-bottom: 30px;
-  color: black;
-}
-
-
-.instagram-img {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 65px;
-  justify-content: center;
-}
-
-.instagram-img img {
-  width: 350px;
-  height: 350px;
-  object-fit: cover;
-  border-radius: 15px;
-  background: #000;
-}
-
-@media (max-width: 900px) {
-  .insta-title {
-    font-size: 30px;
+    font-size: 50px;
     font-weight: 600;
     margin-bottom: 30px;
     color: black;
-  }
+}
 
-  .instagram-img {
+.instagram-img {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+    gap: 65px;
     justify-content: center;
-  }
+}
+
+.instagram-img img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 15px;
+    background: #000;
+}
+
+/* NEW WRAPPER */
+.insta-box {
+    position: relative;
+    display: inline-block;
+}
+
+/* ICON CENTER */
+.insta-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    color: #fff;
+    opacity: 0;
+    transition: 0.4s ease;
+}
+
+/* HOVER EFFECT */
+.insta-box:hover img {
+    opacity: 1.4; 
+}
+
+.insta-box:hover .insta-icon {
+    opacity: 1;
+}
+
+@media (max-width: 900px) {
+    .insta-title {
+        font-size: 30px;
+        font-weight: 600;
+        margin-bottom: 30px;
+        color: black;
+    }
+
+    .instagram-img {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+        justify-content: center;
+    }
 }
 
 
