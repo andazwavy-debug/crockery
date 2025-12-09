@@ -1460,15 +1460,29 @@ span.revrating {
   margin: 0 4px;
 }
 
-.slick-dots li button:before {
-  font-size: 10px;
-  color: #ddd;
-  opacity: 1;
+/* Remove italic anywhere inside slick dots */
+.slick-dots * {
+  font-style: normal !important;
 }
 
-.slick-dots li.slick-active button:before {
-  color: #ff9800;
+/* Bar Style Dots */
+.slick-dots li button:before {
+  content: "" !important;
+  width: 28px;
+  height: 6px;
+  background: #fe9627;
+  border-radius: 4px;
+  display: block;
+  opacity: 1 !important;
+  transition: 0.3s ease;
 }
+
+/* Active Bar */
+.slick-dots li.slick-active button:before {
+  background: #ff9800;
+  width: 38px;
+}
+
 
 /* Responsive */
 @media (max-width: 992px) {
@@ -1519,7 +1533,7 @@ span.revrating {
 }
 
 /* Create clean round dots */
-.slick-dots li button:before {
+/* .slick-dots li button:before {
   content: "" !important;
   width: 10px;
   height: 10px;
@@ -1527,7 +1541,7 @@ span.revrating {
   border-radius: 50%;
   display: block;
   opacity: 1 !important;
-}
+} */
 
 .slick-dots li.slick-active button:before {
   background: #ff9800;
@@ -1946,7 +1960,7 @@ footer {
 .footer-col ul li a {
   color: var(--light-text);
   text-decoration: none;
-  font-size: 20px;
+  font-size: 18px;
   transition: color 0.3s;
 }
 
