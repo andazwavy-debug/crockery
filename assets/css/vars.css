@@ -1,0 +1,26 @@
+
+@import "font.css";
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+
+:root {
+    --main-color:#FE9627;
+    --secondry-color:#Ffff;
+    --light-text: #FFFFFF;
+    --light-bg: #666666;
+    --dark-bg:#020809;
+    --light-black:#0F1722;
+    --black:#000;
+
+  }
+
+

@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>crockery</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+   <!--fav-icon-->
+   <!-- <link rel="apple-touch-icon" sizes="57x57" href="assets/images/fav/apple-icon-57x57.png">
+            <link rel="apple-touch-icon" sizes="60x60" href="assets/images/fav/apple-icon-60x60.png">
+            <link rel="apple-touch-icon" sizes="72x72" href="assets/images/fav/apple-icon-72x72.png">
+            <link rel="apple-touch-icon" sizes="76x76" href="assets/images/fav/apple-icon-76x76.png">
+            <link rel="apple-touch-icon" sizes="114x114" href="assets/images/fav/apple-icon-114x114.png">
+            <link rel="apple-touch-icon" sizes="120x120" href="assets/images/fav/apple-icon-120x120.png">
+            <link rel="apple-touch-icon" sizes="144x144" href="assets/images/fav/apple-icon-144x144.png">
+            <link rel="apple-touch-icon" sizes="152x152" href="assets/images/fav/apple-icon-152x152.png">
+            <link rel="apple-touch-icon" sizes="180x180" href="assets/images/fav/apple-icon-180x180.png">
+            <link rel="icon" type="image/png" sizes="192x192"  href="assets/images/fav/android-icon-192x192.png">
+            <link rel="icon" type="image/png" sizes="32x32" href="assets/images/fav/favicon-32x32.png">
+            <link rel="icon" type="image/png" sizes="96x96" href="assets/images/fav/favicon-96x96.png">
+            <link rel="icon" type="image/png" sizes="16x16" href="assets/images/fav/favicon-16x16.png">
+            <link rel="manifest" href="assets/images/fav/manifest.json">
+            <meta name="msapplication-TileColor" content="#ffffff">
+            <meta name="msapplication-TileImage" content="assets/images/fav/ms-icon-144x144.png">
+            <meta name="theme-color" content="#ffffff"> -->
+   <!--fav-icon-->
+   <!-- All Styles  -->
+   <link rel="stylesheet" href="assets/css/style.css">
+   <link rel="stylesheet" href="assets/css/slick.css">
+</head>
+
+<body>
+   <!-- ======= Start Header ======= -->
+   <div class="top-bar">
+      FREE EXPRESS SHIPPING ON ORDER ABOVE $200+
+   </div>
+   <!-- Main Header -->
+   <header>
+      <div class="header-inner">
+         <!-- Hamburger -->
+         <div class="hamburger" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+         </div>
+         <div class="search-container" onclick="alert('Search clicked!')">
+            <i class="fas fa-search"></i>
+            <span>SEARCH</span>
+         </div>
+         <div class="logo">LOGO</div>
+         <div class="header-icons">
+            <a href="#" class="account-icon"><i class="far fa-user"></i></a>
+            <a href="#" class="wishlist-icon"><i class="far fa-heart"></i></a>
+            <a href="#" class="cart-icon">
+               <i class="fas fa-shopping-cart"></i>
+               <span class="cart-badge">0</span>
+            </a>
+         </div>
+      </div>
+      <!-- Desktop Navigation -->
+      <nav class="nav">
+         <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="/categories.html">Categories</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">More</a></li>
+         </ul>
+      </nav>
+      <!-- Mobile Menu -->
+      <div class="mobile-menu" id="mobileMenu">
+         <a href="#">Home</a>
+         <a href="#">Categories</a>
+         <a href="#">Products</a>
+         <a href="#">About Us</a>
+         <a href="#">Gallery</a>
+         <a href="#">More</a>
+      </div>
+   </header>
+   <!-- ======= End Header ======= -->
+   <!-- ======= Banner Start ======= -->
+   <div class="hero">
+      <div class="container">
+         <div>
+            <div class="content">
+               <h1>The World's Finest Crockeries<br>Are Here.</h1>
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper
+                  mattis, pulvinar dapibus leo. Lorem ipsum dolor sit amet
+               </p>
+               <div class="buttons">
+                  <a href="#" class="btn btn-shop">SHOP COLLECTION</a>
+                  <a href="#" class="btn btn-explore">EXPLORE MORE</a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- ======= Banner end ======= -->
+   <!-- ======= catagary-start ======= -->
+   <section class="Categories-featured">
+      <div class="container">
+         <h2 class="section-title">Featured Categories</h2>
+         <div class="categories-slider">
+            <div class="category-item">
+               <img src="assets/images/banner/bartan.png" alt="Bakeware">
+               <button class="category-btn">Bakeware</button>
+            </div>
+            <div class="category-item">
+               <img src="assets/images/banner/cup.png" alt="Mathat Glass">
+               <button class="category-btn">Mathat Glass</button>
+            </div>
+            <div class="category-item">
+               <img src="assets/images/banner/spon.png" alt="Spoon">
+               <button class="category-btn">spoon</button>
+            </div>
+            <div class="category-item">
+               <img src="assets/images/banner/spot.png" alt="Support Bra">
+               <button class="category-btn">Support Bra</button>
+            </div>
+            <div class="category-item">
+               <img src="assets/images/banner/bartan.png" alt="Item 5">
+               <button class="category-btn">Bakeware</button>
+            </div>
+            <div class="category-item">
+               <img src="assets/images/banner/cup.png" alt="Item 6">
+               <button class="category-btn">Mathat Glass</button>
+            </div>
+            <div class="category-item">
+               <img src="assets/images/banner/spon.png" alt="Item 6">
+               <button class="category-btn">Mathat Glass</button>
+            </div>
+            <div class="category-item">
+               <img src="assets/images/banner/spot.png" alt="Item 6">
+               <button class="category-btn">Mathat Glass</button>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- ======= catagary-end ======= -->
+
+   <!-- Our Best Sellers -->
+   <section class="xpro_bestseller_2025">
+      <div class="container">
+         <div class="xpro_header_flex">
+            <div class="xpro_title_area">
+               <h2>Our Best Sellers</h2>
+               <p>Trusted by thousands of happy customers worldwide</p>
+            </div>
+            <div class="xpro_nav_btns">
+               <button class="xpro_prev_arrow"><i class="fas fa-chevron-left"></i></button>
+               <button class="xpro_next_arrow"><i class="fas fa-chevron-right"></i></button>
+            </div>
+         </div>
+
+         <div class="xpro_slider_outer">
+            <div class="xpro_slider_track" id="xpro-track">
+               <div class="xpro_product_card">
+                  <div class="xpro_red_badge">Best Seller</div>
+                  <div class="xpro_product_img">
+                     <img src="assets/images/banner/our-prduct.png" alt="Product">
+                  </div>
+                  <div class="medium">
+                     <h3>MEDIUM SUPPORT BRA</h3>
+                     <div class="xpro_stars">★★★★☆ <span>4.8 (9 reviews)</span></div>
+                     <div class="xpro_price_line">
+                        $89.99 <del>$120.00</del>
+                     </div>
+                     <button class="xpro_orange_btn">ADD TO CART</button>
+                     <button class="xpro_white_btn">VIEW MORE</button>
+                  </div>
+
+               </div>
+               <div class="xpro_product_card">
+                  <div class="xpro_red_badge">Best Seller</div>
+                  <div class="xpro_product_img">
+                     <img src="assets/images/banner/our-prduct.png" alt="Product">
+                  </div>
+                  <div class="medium">
+                     <h3>MEDIUM SUPPORT BRA</h3>
+                     <div class="xpro_stars">★★★★☆ <span>4.8 (9 reviews)</span></div>
+                     <div class="xpro_price_line">
+                        $89.99 <del>$120.00</del>
+                     </div>
+                     <button class="xpro_orange_btn">ADD TO CART</button>
+                     <button class="xpro_white_btn">VIEW MORE</button>
+                  </div>
+               </div>
+               <div class="xpro_product_card">
+                  <div class="xpro_red_badge">Best Seller</div>
+                  <div class="xpro_product_img">
+                     <img src="assets/images/banner/our-prduct.png" alt="Product">
+                  </div>
+                  <div class="medium">
+                     <h3>MEDIUM SUPPORT BRA</h3>
+                     <div class="xpro_stars">★★★★☆ <span>4.8 (9 reviews)</span></div>
+                     <div class="xpro_price_line">
+                        $89.99 <del>$120.00</del>
+                     </div>
+                     <button class="xpro_orange_btn">ADD TO CART</button>
+                     <button class="xpro_white_btn">VIEW MORE</button>
+                  </div>
+               </div>
+               <div class="xpro_product_card">
+                  <div class="xpro_red_badge">Best Seller</div>
+                  <div class="xpro_product_img">
+                     <img src="assets/images/banner/our-prduct.png" alt="Product">
+                  </div>
+                  <div class="medium">
+                     <h3>MEDIUM SUPPORT BRA</h3>
+                     <div class="xpro_stars">★★★★☆ <span>4.8 (9 reviews)</span></div>
+                     <div class="xpro_price_line">
+                        $89.99 <del>$120.00</del>
+                     </div>
+                     <button class="xpro_orange_btn">ADD TO CART</button>
+                     <button class="xpro_white_btn">VIEW MORE</button>
+                  </div>
+               </div>
+               <div class="xpro_product_card">
+                  <div class="xpro_red_badge">Best Seller</div>
+                  <div class="xpro_product_img">
+                     <img src="assets/images/banner/our-prduct.png" alt="Product">
+                  </div>
+                  <div class="medium">
+                     <h3>MEDIUM SUPPORT BRA</h3>
+                     <div class="xpro_stars">★★★★☆ <span>4.8 (9 reviews)</span></div>
+                     <div class="xpro_price_line">
+                        $89.99 <del>$120.00</del>
+                     </div>
+                     <button class="xpro_orange_btn">ADD TO CART</button>
+                     <button class="xpro_white_btn">VIEW MORE</button>
+                  </div>
+               </div>
+               <div class="xpro_product_card">
+                  <div class="xpro_red_badge">Best Seller</div>
+                  <div class="xpro_product_img">
+                     <img src="assets/images/banner/our-prduct.png" alt="Product">
+                  </div>
+                  <div class="medium">
+                     <h3>MEDIUM SUPPORT BRA</h3>
+                     <div class="xpro_stars">★★★★☆ <span>4.8 (9 reviews)</span></div>
+                     <div class="xpro_price_line">
+                        $89.99 <del>$120.00</del>
+                     </div>
+                     <button class="xpro_orange_btn">ADD TO CART</button>
+                     <button class="xpro_white_btn">VIEW MORE</button>
+                  </div>
+               </div>
+
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- ======= Our Best Sellers end ======= -->
+
+   <!-- cta start -->
+   <section class="new-cta">
+      <div class="container">
+         <div class="banner">
+            <div class="text-content">
+               <h2>Super Sale Up To 50%</h2>
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat.
+               </p>
+            </div>
+            <a href="#" class="cta">Explore Collection</a>
+         </div>
+      </div>
+   </section>
+   <!-- cta end -->
+
+   <!-- our produt start -->
+   <section class="our-product">
+      <div class="container">
+         <p class="subtitle">Products</p>
+         <h2>Our Products</h2>
+         <div class="products-grid">
+            <div class="product-card">
+               <div class="product-img">
+                  <img src="assets/images/banner/our-prduct.png" alt="Teapot">
+                  <span class="badge">Sale</span>
+               </div>
+               <div class="product-info">
+                  <h3 class="product-title">MEDIUM SUPPORT BRA</h3>
+                  <div class="rating">★★★★☆ <span class="revrating">4.8 (9 reviews)</span></div>
+                  <div class="price">$89.99 <del>$120.00</del></div>
+                  <a href="#" class="btn-card">ADD TO CART</a>
+                  <a href="#" class="view-more">VIEW MORE</a>
+               </div>
+            </div>
+            <div class="product-card">
+               <div class="product-img">
+                  <img src="assets/images/banner/our-prduct.png" alt="Teapot">
+                  <span class="badge">Sale</span>
+               </div>
+               <div class="product-info">
+                  <h3 class="product-title">MEDIUM SUPPORT BRA</h3>
+                  <div class="rating">★★★★☆ <span class="revrating">4.8 (9 reviews)</span></div>
+                  <div class="price">$89.99 <del>$120.00</del></div>
+                  <a href="#" class="btn-card">ADD TO CART</a>
+                  <a href="#" class="view-more">VIEW MORE</a>
+               </div>
+            </div>
+            <div class="product-card">
+               <div class="product-img">
+                  <img src="assets/images/banner/our-prduct.png" alt="Teapot">
+                  <span class="badge">Sale</span>
+               </div>
+               <div class="product-info">
+                  <h3 class="product-title">MEDIUM SUPPORT BRA</h3>
+                  <div class="rating">★★★★☆ <span class="revrating">4.8 (9 reviews)</span></div>
+                  <div class="price">$89.99 <del>$120.00</del></div>
+                  <a href="#" class="btn-card">ADD TO CART</a>
+                  <a href="#" class="view-more">VIEW MORE</a>
+               </div>
+            </div>
+            <div class="product-card">
+               <div class="product-img">
+                  <img src="assets/images/banner/our-prduct.png" alt="Teapot">
+                  <span class="badge">Sale</span>
+               </div>
+               <div class="product-info">
+                  <h3 class="product-title">MEDIUM SUPPORT BRA</h3>
+                  <div class="rating">★★★★☆ <span class="revrating">4.8 (9 reviews)</span></div>
+                  <div class="price">$89.99 <del>$120.00</del></div>
+                  <a href="#" class="btn-card">ADD TO CART</a>
+                  <a href="#" class="view-more">VIEW MORE</a>
+               </div>
+            </div>
+            <div class="product-card">
+               <div class="product-img">
+                  <img src="assets/images/banner/our-prduct.png" alt="Teapot">
+                  <span class="badge">Sale</span>
+               </div>
+               <div class="product-info">
+                  <h3 class="product-title">MEDIUM SUPPORT BRA</h3>
+                  <div class="rating">★★★★☆ <span class="revrating">4.8 (9 reviews)</span></div>
+                  <div class="price">$89.99 <del>$120.00</del></div>
+                  <a href="#" class="btn-card">ADD TO CART</a>
+                  <a href="#" class="view-more">VIEW MORE</a>
+               </div>
+            </div>
+            <div class="product-card">
+               <div class="product-img">
+                  <img src="assets/images/banner/our-prduct.png" alt="Teapot">
+                  <span class="badge">Sale</span>
+               </div>
+               <div class="product-info">
+                  <h3 class="product-title">MEDIUM SUPPORT BRA</h3>
+                  <div class="rating">★★★★☆ <span class="revrating">4.8 (9 reviews)</span></div>
+                  <div class="price">$89.99 <del>$120.00</del></div>
+                  <a href="#" class="btn-card">ADD TO CART</a>
+                  <a href="#" class="view-more">VIEW MORE</a>
+               </div>
+            </div>
+         </div>
+         <div class="view-all">
+            <a href="#" class="view-all-btn">VIEW ALL</a>
+         </div>
+      </div>
+   </section>
+   <!-- ======= our-product-end ======= -->
+   <!-- paymet-start -->
+   <section>
+      <div class="guarantee-bar">
+         <div class="guarantee-wrapper">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="item">
+               <div class="icon"><img src="assets/images/icons/money.svg" alt=""></div>
+               <div>
+                  <h3>Money Back Guarantee</h3>
+                  <p>30 days back money</p>
+               </div>
+            </div>
+            <div class="item">
+               <div class="icon"><img src="assets/images/icons/online.svg" alt=""></div>
+               <div>
+                  <h3>24/7 online support</h3>
+                  <p>24h free online support</p>
+               </div>
+            </div>
+            <div class="item">
+               <div class="icon"><img src="assets/images/icons/payment.svg" alt=""></div>
+               <div>
+                  <h3>Payment Method</h3>
+                  <p>Absolutely safe system</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- end -->
+   <!-- testimpnail -->
+   <div class="testi-wrap">
+      <h2 class="testi-title">What It's Like Working with Us</h2>
+      <p class="testi-subtitle">
+         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis,
+         pulvinar dapibus leo.
+      </p>
+      <div class="testi-slider">
+         <div class="testimonial">
+            <div class="testimonial-inner">
+               <div class="testi-img">
+                  <img src="assets/images/banner/testmon.png" alt="Customer 1">
+               </div>
+               <div class="testi-content">
+                  <h4>John Doe</h4>
+                  <div class="stars">★★★★★</div>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                     et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                     aliquip ex ea commodo consequat
+                  </p>
+               </div>
+            </div>
+         </div>
+         <div class="testimonial">
+            <div class="testimonial-inner">
+               <div class="testi-img">
+                  <img src="assets/images/banner/testmon.png" alt="Customer 2">
+               </div>
+               <div class="testi-content">
+                  <h4>Sarah Johnson</h4>
+                  <div class="stars">★★★★★</div>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                     et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                     aliquip ex ea commodo consequat</p>
+               </div>
+            </div>
+         </div>
+         <div class="testimonial">
+            <div class="testimonial-inner">
+               <div class="testi-img">
+                  <img src="assets/images/banner/testmon.png" alt="Customer 3">
+               </div>
+               <div class="testi-content">
+                  <h4>David Brown</h4>
+                  <div class="stars">★★★★★</div>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                     et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                     aliquip ex ea commodo consequat</p>
+               </div>
+            </div>
+         </div>
+         <div class="testimonial">
+            <div class="testimonial-inner">
+               <div class="testi-img">
+                  <img src="assets/images/banner/testmon.png" alt="Customer 4">
+               </div>
+               <div class="testi-content">
+                  <h4>Lisa Anderson</h4>
+                  <div class="stars">★★★★★</div>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                     et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                     aliquip ex ea commodo consequat</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- newsletter -->
+
+   <section class="newsletter-section">
+      <div class="content-newsletter">
+         <h2>Stay In Touch!</h2>
+         <p>
+            Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit.
+            Sed Do Eiusmod Tempor Incididunt Ut Labore Et Dolore Magna Aliqua.
+         </p>
+         <form class="subscribe-form">
+            <input type="email" placeholder="Enter Your Email" required>
+            <button type="submit">SUBSCRIBE NOW</button>
+         </form>
+      </div>
+   </section>
+   <!-- newsletter-end -->
+
+   <!-- contact -->
+   <section class="contact-section">
+      <div class="container">
+         <h2 class="main-title">Contact Us</h2>
+         <p class="sub-title">Any question or remarks? Just write us a message!</p>
+         <div class="contact-box">
+            <div class="left">
+               <h2>Let's Talk!</h2>
+               <span></span>
+               <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                  nisi ut aliquip ex ea commodo consequat
+               </p>
+            </div>
+            <div class="right">
+               <form>
+                  <div class="row">
+                     <div>
+                        <label>First Name</label>
+                        <input type="text">
+                     </div>
+                     <div>
+                        <label>Last Name</label>
+                        <input type="text">
+                     </div>
+                  </div>
+                  <div>
+                     <label>Email</label>
+                     <input type="email">
+                  </div>
+                  <div>
+                     <label>Phone</label>
+                     <input type="text">
+                  </div>
+                  <div>
+                     <label>Message</label>
+                     <textarea></textarea>
+                  </div>
+                  <button class="form-btn">Send Message</button>
+               </form>
+            </div>
+         </div>
+      </div>
+
+
+   </section>
+   <!-- insagram -->
+   <section class="instagram-section">
+      <div class="container">
+         <h2 class="insta-title">Follow us on @Instagram</h2>
+
+         <div class="instagram-img">
+            <div><img src="assets/images/banner/insat-1.png" alt=""></div>
+            <div><img src="assets/images/banner/insat-2.png" alt=""></div>
+            <div><img src="assets/images/banner/insat-3.png" alt=""></div>
+            <div><img src="assets/images/banner/insat-4.png" alt=""></div>
+         </div>
+      </div>
+   </section>
+
+   <!-- ======= footer starat ======= -->
+   <footer>
+      <div class="footer-container">
+         <div class="footer-logo">LOGO</div>
+         <div class="footer-links">
+            <div class="footer-col">
+               <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Service</a></li>
+                  <li><a href="#">Categories</a></li>
+               </ul>
+            </div>
+            <div class="footer-col">
+               <h4>Products</h4>
+               <ul>
+                  <li><a href="#">Privacy Policy</a></li>
+                  <li><a href="#">Gallery</a></li>
+                  <li><a href="#">Contact</a></li>
+               </ul>
+            </div>
+         </div>
+         <div class="footer-contact">
+            <div class="contact-item">
+               <img src="/assets/images/icons/mail.svg" alt="Email" class="contact-icon">
+               <span>crockery@gmail.com</span>
+            </div>
+            <div class="contact-item">
+               <img src="/assets/images/icons/phone.svg" alt="Phone" class="contact-icon">
+               <span>123456789010</span>
+            </div>
+            <div class="social-icons">
+               <a href="#" aria-label="Facebook">
+                  <img src="/assets/images/icons/facebook.svg" alt="Facebook">
+               </a>
+               <a href="#" aria-label="Instagram">
+                  <img src="/assets/images/icons/new-insta.png" alt="Instagram">
+               </a>
+               <a href="#" aria-label="Pinterest">
+                  <img src="/assets/images/icons/pin.svg" alt="Pinterest">
+               </a>
+            </div>
+         </div>
+      </div>
+      <div class="footer-bottom">
+         © Crockery 2025. ALL RIGHTS RESERVED. | PRIVACY POLICY
+      </div>
+   </footer>
+   <!-- ======= footer end ======= -->
+   <script src="assets/js/jquery.min.js" type="text/javascript"></script>
+   <script src="assets/js/slick.js" type="text/javascript"></script>
+   <script src="assets/js/script.js" type="text/javascript"></script>
+
+</html>

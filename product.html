@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <!--fav-icon-->
+    <!-- <link rel="apple-touch-icon" sizes="57x57" href="assets/images/fav/apple-icon-57x57.png">
+            <link rel="apple-touch-icon" sizes="60x60" href="assets/images/fav/apple-icon-60x60.png">
+            <link rel="apple-touch-icon" sizes="72x72" href="assets/images/fav/apple-icon-72x72.png">
+            <link rel="apple-touch-icon" sizes="76x76" href="assets/images/fav/apple-icon-76x76.png">
+            <link rel="apple-touch-icon" sizes="114x114" href="assets/images/fav/apple-icon-114x114.png">
+            <link rel="apple-touch-icon" sizes="120x120" href="assets/images/fav/apple-icon-120x120.png">
+            <link rel="apple-touch-icon" sizes="144x144" href="assets/images/fav/apple-icon-144x144.png">
+            <link rel="apple-touch-icon" sizes="152x152" href="assets/images/fav/apple-icon-152x152.png">
+            <link rel="apple-touch-icon" sizes="180x180" href="assets/images/fav/apple-icon-180x180.png">
+            <link rel="icon" type="image/png" sizes="192x192"  href="assets/images/fav/android-icon-192x192.png">
+            <link rel="icon" type="image/png" sizes="32x32" href="assets/images/fav/favicon-32x32.png">
+            <link rel="icon" type="image/png" sizes="96x96" href="assets/images/fav/favicon-96x96.png">
+            <link rel="icon" type="image/png" sizes="16x16" href="assets/images/fav/favicon-16x16.png">
+            <link rel="manifest" href="assets/images/fav/manifest.json">
+            <meta name="msapplication-TileColor" content="#ffffff">
+            <meta name="msapplication-TileImage" content="assets/images/fav/ms-icon-144x144.png">
+            <meta name="theme-color" content="#ffffff"> -->
+    <!--fav-icon-->
+    <!-- All Styles  -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/product.css">
+    <link rel="stylesheet" href="assets/css/cat.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+</head>
+
+<body>
+    <!-- ======= Start Header ======= -->
+    <div class="top-bar">
+        FREE EXPRESS SHIPPING ON ORDER ABOVE $200+
+    </div>
+    <!-- Main Header -->
+    <header>
+        <div class="header-inner">
+            <!-- Hamburger -->
+            <div class="hamburger" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="search-container" onclick="alert('Search clicked!')">
+                <i class="fas fa-search"></i>
+                <span>SEARCH</span>
+            </div>
+            <div class="logo">LOGO</div>
+            <div class="header-icons">
+                <a href="#" class="account-icon"><i class="far fa-user"></i></a>
+                <a href="#" class="wishlist-icon"><i class="far fa-heart"></i></a>
+                <a href="#" class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-badge">0</span>
+                </a>
+            </div>
+        </div>
+        <!-- Desktop Navigation -->
+        <nav class="nav">
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/categories.html">Categories</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">More</a></li>
+            </ul>
+        </nav>
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="#">Home</a>
+            <a href="#">Categories</a>
+            <a href="#">Products</a>
+            <a href="#">About Us</a>
+            <a href="#">Gallery</a>
+            <a href="#">More</a>
+        </div>
+    </header>
+    <!-- ======= End Header ======= -->
+
+    <!-- breadcrumb -->
+    <section class="breadcrumb-sec">
+        <div class="container">
+            <nav class="breadcrumb" aria-label="breadcrumb">
+                <a href="/">Home</a>
+                <span class="separator">></span>
+                <span class="current" aria-current="page">Shop</span>
+                <span class="separator">></span>
+                <span class="current" aria-current="page">Medium Support Bra</span>
+            </nav>
+
+        </div>
+    </section>
+
+
+    <!-- producat -->
+    <section class="sectio-top">
+        <div class="container">
+            <div class="page-wrapper">
+
+                <!-- Left - Images -->
+                <div class="left-side">
+                    <img src="assets/images/product/main.png" class="big-photo" id="mainImg">
+                    <div class="small-photos">
+                        <img src="assets/images/product/p-5.png" class="active" onclick="changeImg(this)">
+                        <img src="assets/images/product/p-4.png" onclick="changeImg(this)">
+                        <img src="assets/images/product/p-3.png" onclick="changeImg(this)">
+                        <img src="assets/images/product/p-2.png" onclick="changeImg(this)">
+                        <img src="assets/images/product/p-1.png" onclick="changeImg(this)">
+                    </div>
+                </div>
+
+                <!-- Right - Details -->
+                <div class="right-side">
+                    <h1>Medium Support Bra</h1>
+                    <div class="rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="reviews">600 Reviews</span>
+                    </div>
+
+                    <div class="price">
+                        <span class="old">$49.00 USD</span>
+                        <span class="new">$42.00 USD</span>
+                        <span class="off">20% OFF</span>
+                    </div>
+
+                    <p class="label">Size</p>
+                    <div class="sizes">
+                        <button class="size active">22 Cm</button>
+                        <button class="size ">26 Cm</button>
+                        <button class="size">28 Cm</button>
+                        <button class="size">27 Cm</button>
+                        <button class="size">30 Cm</button>
+                    </div>
+
+                    <p class="stock">In Stock (23)</p>
+                    <div class="quantity-span"> <span>Quantity</span></div>
+
+                    <div class="qty-row">
+
+                        <div class="qty">
+                            <button onclick="changeQty(-1)">−</button>
+                            <input type="text" value="1" id="qty">
+                            <button onclick="changeQty(1)">+</button>
+                        </div>
+                        <button class="add">ADD TO CART</button>
+                    </div>
+
+                    <button class="buy">BUY IT NOW</button>
+                    <p class="info">Fast Shipping | Easy Returns | 100% Guarantee</p>
+
+                    <!-- Accordion - Shipping open by default -->
+                    <div class="accordion">
+
+                        <div class="section">
+                            <div class="head" onclick="toggle(this)">
+                                Description
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                            <div class="body">
+                                Premium glass carafe that looks exactly like medium support bra...
+                            </div>
+                        </div>
+
+                        <div class="section">
+                            <div class="head" onclick="toggle(this)">
+                                Detail
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                            <div class="body">
+                                1L · Borosilicate glass · Heat resistant · Stainless handle
+                            </div>
+                        </div>
+
+                        <div class="section">
+                            <div class="head" onclick="toggle(this)">
+                                Shipping
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                            <div class="body">
+                                Free shipping over $50 · 3–7 days delivery · Full tracking
+                            </div>
+                        </div>
+
+                        <!-- Last one → open by default, minus icon orange -->
+                        <div class="section">
+                            <div class="head active" onclick="toggle(this)">
+                                Product Highlights
+                                <i class="fa-solid fa-minus"></i>
+                            </div>
+                            <div class="body open">
+                                <ul class="features">
+                                    <li>Wide straps & elastic band for better comfort and lift.</li>
+                                    <li>Medium compression – controls bounce without tightness.</li>
+                                    <li>Seamless stitching to prevent irritation or chafing.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- tab -->
+
+    <section class="section-top">
+        <div class="container">
+            <div class="tabs-container">
+                <!-- Tabs -->
+                <div class="tabs">
+                    <div class="tab active" data-tab="description">Description</div>
+                    <div class="tab" data-tab="reviews">Reviews</div>
+                </div>
+
+                <!-- Tab Contents -->
+                <div id="description" class="tab-content active">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor. Aenean
+                    massa.
+                    Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam
+                    felis,
+                    ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede
+                    justo,
+                    fringilla vel, aliquet nec, vulputate eget, arcu.<br><br>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor. Aenean
+                    massa.
+                    Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam
+                    felis,
+                    ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede
+                    justo,
+                    fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis
+                    vitae, justo.
+                </div>
+
+                <div id="reviews" class="tab-content">
+                    <!-- You can add real reviews here -->
+                    <p><strong>John Doe</strong> ★★★★★</p>
+                    <p>Great product! Highly recommend.</p>
+                    <hr>
+                    <p><strong>Jane Smith</strong> ★★★★☆</p>
+                    <p>Very good quality, fast shipping.</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- you-may also  -->
+
+     <section class="our-product">
+      <div class="container">
+         <h2>You May Also like</h2>
+         <div class="products-grid">
+            <div class="product-card">
+               <div class="product-img">
+                  <img src="assets/images/banner/our-prduct.png" alt="Teapot">
+                  <span class="badge">Sale</span>
+               </div>
+               <div class="product-info">
+                  <h3 class="product-title">MEDIUM SUPPORT BRA</h3>
+                  <div class="rating">★★★★☆ <span class="revrating">4.8 (9 reviews)</span></div>
+                  <div class="price">$89.99 <del>$120.00</del></div>
+                  <a href="#" class="btn-card">ADD TO CART</a>
+                  <a href="#" class="view-more">VIEW MORE</a>
+               </div>
+            </div>
+            <div class="product-card">
+               <div class="product-img">
+                  <img src="assets/images/banner/our-prduct.png" alt="Teapot">
+                  <span class="badge">Sale</span>
+               </div>
+               <div class="product-info">
+                  <h3 class="product-title">MEDIUM SUPPORT BRA</h3>
+                  <div class="rating">★★★★☆ <span class="revrating">4.8 (9 reviews)</span></div>
+                  <div class="price">$89.99 <del>$120.00</del></div>
+                  <a href="#" class="btn-card">ADD TO CART</a>
+                  <a href="#" class="view-more">VIEW MORE</a>
+               </div>
+            </div>
+            <div class="product-card">
+               <div class="product-img">
+                  <img src="assets/images/banner/our-prduct.png" alt="Teapot">
+                  <span class="badge">Sale</span>
+               </div>
+               <div class="product-info">
+                  <h3 class="product-title">MEDIUM SUPPORT BRA</h3>
+                  <div class="rating">★★★★☆ <span class="revrating">4.8 (9 reviews)</span></div>
+                  <div class="price">$89.99 <del>$120.00</del></div>
+                  <a href="#" class="btn-card">ADD TO CART</a>
+                  <a href="#" class="view-more">VIEW MORE</a>
+               </div>
+            </div>
+            <div class="product-card">
+               <div class="product-img">
+                  <img src="assets/images/banner/our-prduct.png" alt="Teapot">
+                  <span class="badge">Sale</span>
+               </div>
+               <div class="product-info">
+                  <h3 class="product-title">MEDIUM SUPPORT BRA</h3>
+                  <div class="rating">★★★★☆ <span class="revrating">4.8 (9 reviews)</span></div>
+                  <div class="price">$89.99 <del>$120.00</del></div>
+                  <a href="#" class="btn-card">ADD TO CART</a>
+                  <a href="#" class="view-more">VIEW MORE</a>
+               </div>
+            </div>
+            <div class="product-card">
+               <div class="product-img">
+                  <img src="assets/images/banner/our-prduct.png" alt="Teapot">
+                  <span class="badge">Sale</span>
+               </div>
+               <div class="product-info">
+                  <h3 class="product-title">MEDIUM SUPPORT BRA</h3>
+                  <div class="rating">★★★★☆ <span class="revrating">4.8 (9 reviews)</span></div>
+                  <div class="price">$89.99 <del>$120.00</del></div>
+                  <a href="#" class="btn-card">ADD TO CART</a>
+                  <a href="#" class="view-more">VIEW MORE</a>
+               </div>
+            </div>
+            <div class="product-card">
+               <div class="product-img">
+                  <img src="assets/images/banner/our-prduct.png" alt="Teapot">
+                  <span class="badge">Sale</span>
+               </div>
+               <div class="product-info">
+                  <h3 class="product-title">MEDIUM SUPPORT BRA</h3>
+                  <div class="rating">★★★★☆ <span class="revrating">4.8 (9 reviews)</span></div>
+                  <div class="price">$89.99 <del>$120.00</del></div>
+                  <a href="#" class="btn-card">ADD TO CART</a>
+                  <a href="#" class="view-more">VIEW MORE</a>
+               </div>
+            </div>
+            <div class="product-card">
+               <div class="product-img">
+                  <img src="assets/images/banner/our-prduct.png" alt="Teapot">
+                  <span class="badge">Sale</span>
+               </div>
+               <div class="product-info">
+                  <h3 class="product-title">MEDIUM SUPPORT BRA</h3>
+                  <div class="rating">★★★★☆ <span class="revrating">4.8 (9 reviews)</span></div>
+                  <div class="price">$89.99 <del>$120.00</del></div>
+                  <a href="#" class="btn-card">ADD TO CART</a>
+                  <a href="#" class="view-more">VIEW MORE</a>
+               </div>
+            </div>
+            <div class="product-card">
+               <div class="product-img">
+                  <img src="assets/images/banner/our-prduct.png" alt="Teapot">
+                  <span class="badge">Sale</span>
+               </div>
+               <div class="product-info">
+                  <h3 class="product-title">MEDIUM SUPPORT BRA</h3>
+                  <div class="rating">★★★★☆ <span class="revrating">4.8 (9 reviews)</span></div>
+                  <div class="price">$89.99 <del>$120.00</del></div>
+                  <a href="#" class="btn-card">ADD TO CART</a>
+                  <a href="#" class="view-more">VIEW MORE</a>
+               </div>
+            </div>
+         </div>
+         
+      </div>
+   </section>
+
+
+    <!-- ======= footer starat ======= -->
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">LOGO</div>
+            <div class="footer-links">
+                <div class="footer-col">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Service</a></li>
+                        <li><a href="#">Categories</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-contact">
+                <div class="contact-item">
+                    <img src="/assets/images/icons/mail.svg" alt="Email" class="contact-icon">
+                    <span>crockery@gmail.com</span>
+                </div>
+                <div class="contact-item">
+                    <img src="/assets/images/icons/phone.svg" alt="Phone" class="contact-icon">
+                    <span>123456789010</span>
+                </div>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook">
+                        <img src="/assets/images/icons/facebook.svg" alt="Facebook">
+                    </a>
+                    <a href="#" aria-label="Instagram">
+                        <img src="/assets/images/icons/new-insta.png" alt="Instagram">
+                    </a>
+                    <a href="#" aria-label="Pinterest">
+                        <img src="/assets/images/icons/pin.svg" alt="Pinterest">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            © Crockery 2025. ALL RIGHTS RESERVED. | PRIVACY POLICY
+        </div>
+    </footer>
+    <!-- ======= footer end ======= -->
+    <script src="./assets/js/jquery.min.js" type="text/javascript"></script>
+    <script src="./assets/js/slick.js" type="text/javascript"></script>
+    <script src="./assets/js/script.js" type="text/javascript"></script>
+</body>
+
+</html>
