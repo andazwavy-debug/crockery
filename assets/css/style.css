@@ -1437,6 +1437,7 @@ span.revrating {
   font-weight: 600;
   color: #111;
   margin-bottom: 6px;
+  font-style: normal;
 }
 
 .stars {
