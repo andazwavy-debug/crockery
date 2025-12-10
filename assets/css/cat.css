@@ -73,7 +73,7 @@ blockquote,
 
 
 .breadcrumb-sec {
-    background-image: linear-gradient(rgb(0 0 0 / 68%), /* black overlay (halka) */ rgb(0 0 0 / 68%)), url(../images/banner/inner-banner.png);
+    background-image: linear-gradient(rgb(0 0 0 / 42%), /* black overlay (halka) */ rgb(0 0 0 / 68%)), url(../images/banner/inner-banner.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -150,13 +150,18 @@ blockquote,
 
 .section-title {
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 400;
     margin: 0 0 12px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
+h2.section-titles {
+    font-size: 20px col;
+    font-size: 30px;
+    font-weight: 400;
+    color: black;
+}
 .plus-icon {
     font-size: 18px;
     color: #fffcfc;
@@ -183,6 +188,7 @@ blockquote,
     padding: 8px 0;
     color: #333;
     font-size: 15px;
+    font-weight: 400;
 }
 
 .price-range {

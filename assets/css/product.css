@@ -497,15 +497,15 @@ section.our-product h2 {
 }
 
 .badge {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  background: #ff3b30;
-  color: white;
-  font-size: 12px;
-  font-weight: bold;
-  padding: 5px 12px;
-  border-radius: 20px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: #ff3b30;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 3px 24px;
+    border-radius: 50px;
 }
 
 .product-info {
