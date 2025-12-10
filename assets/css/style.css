@@ -1560,6 +1560,16 @@ span.revrating {
   width: 38px;
 }
 
+button#slick-slide-control02 {
+    border: navajowhite;
+}
+button#slick-slide-control01 {
+    border: none;
+}
+button#slick-slide-control00 {
+    border: none;
+}
+
 
 /* Responsive */
 @media (max-width: 992px) {
