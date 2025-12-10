@@ -612,11 +612,11 @@ section.Categories-featured {
   cursor: pointer;
 }
   .slick-prev {
-    left: 10px;
+    left: -6px;
   }
 
   .slick-next {
-    right: 10px;
+    right: -6px;
   }
 
   .category-btn {
@@ -1010,7 +1010,6 @@ section.category-section {
 @media (max-width: 600px) {
   .categories-slider {
     gap: 20px;
-    padding: 0 50px;
   }
 
   .category-card {
@@ -1430,6 +1429,22 @@ span.revrating {
     justify-content: flex-start;
 
   }
+  .item {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    z-index: 2;
+    min-width: 250px;
+}
+.item h3 {
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin: 0;
+    text-align: left;
+}
 
   .line {
     display: none;
