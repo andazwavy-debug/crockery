@@ -79,6 +79,7 @@ $(document).ready(function () {
   });
 });
 
+
 // Slick products slider
 const xproTrack = document.getElementById('xpro-track');
 const xproPrev = document.querySelector('.xpro_prev_arrow');

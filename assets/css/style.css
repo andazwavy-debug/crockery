@@ -520,16 +520,16 @@ section.Categories-featured {
   justify-content: center;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   position: absolute;
-  top: 40%;
+  top: 39%;
   cursor: pointer;
 }
 
 .slick-prev {
-  left: 46px;
+  left: -15px;
 }
 
 .slick-next {
-  right: 46px;
+  right: -15px;
 }
 
 .slick-prev:before,
@@ -918,7 +918,7 @@ section.category-section {
   display: flex;
   gap: 30px;
   transition: transform 0.5s ease;
-  padding: 0 60px;
+  /* padding: 0 60px; */
 }
 
 .category-card {
