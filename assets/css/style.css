@@ -256,7 +256,7 @@ header {
     height: 750px;
     display: flex;
     align-items: center;
-    position: relative;                /* Important: parent must be relative */
+    position: relative;               
     overflow: hidden;
 }
 
@@ -1336,13 +1336,13 @@ span.revrating {
 }
 
 .guarantee-wrapper {
-  max-width: 1350px;
+  max-width: 1440px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: relative;
-  gap: 40px;
+  gap: 100px;
 }
 
 .item {
@@ -1350,7 +1350,7 @@ span.revrating {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 25px;
+  gap: 40px;
   z-index: 2;
   min-width: 250px;
 }
@@ -1371,7 +1371,7 @@ span.revrating {
 }
 
 .icon img {
-  width: 55px;
+  width: 65px;
   height: auto;
 }
 
@@ -1398,7 +1398,7 @@ span.revrating {
 }
 
 .line:nth-child(4) {
-  left: 93%;
+  left: 100%;
 }
 
 /* ---------- TABLET (768–1100px) ---------- */
