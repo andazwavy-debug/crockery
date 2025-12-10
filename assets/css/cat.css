@@ -118,17 +118,10 @@ blockquote,
 .two-grid {
     display: grid;
     grid-template-columns: 30% 70%;
+    gap: 20px;
 }
 
-/* Styling example */
 
-
-/* Mobile Responsive */
-@media (max-width: 768px) {
-    .two-grid {
-        grid-template-columns: 1fr;
-    }
-}
 
 .filters-container {
     max-width: 400px;
@@ -261,19 +254,7 @@ h2.section-titles {
     align-items: center;
 }
 
-.icon-btn {
-    width: 42px;
-    height: 42px;
-    background: rgb(0, 0, 0);
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 18px;
-    color: #ffffff;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
-    cursor: pointer;
-}
+
 
 .select-wrapper {
     position: relative;
@@ -306,7 +287,7 @@ h2.section-titles {
       justify-content: end;
       align-items: center;
       gap: 10px; 
-      margin-top: 20px;              /* तुम्हारे screenshot में यही gap है */
+      margin-top: 20px;             
     }
 
     /* Previous Button */
@@ -383,10 +364,9 @@ h2.section-titles {
     }
 }
 
-/* Mobile & Small Tablet (max 768px - 768px) */
 @media (max-width: 768px) {
     .two-grid-section {
-        padding: 40px 15px;
+        padding: 40px 0px;
     }
 
     .two-grid {
@@ -398,9 +378,9 @@ h2.section-titles {
     .filters-container {
         max-width: none;
         height: auto;
-        position: static;
         box-shadow: 0 2px 10px rgba(0,0,0,0.08);
         border-radius: 12px;
+        padding-bottom: 40px;
     }
 
     /* Filter header (top bar with icons & sort) को mobile में sticky बनाते हैं */
@@ -461,23 +441,25 @@ h2.section-titles {
     /* Pagination mobile friendly */
     .pagination {
         justify-content: center;
-        flex-wrap: wrap;
-        gap: 8px;
+        flex-wrap: nowrap;
+        gap: 5px;
         padding: 10px 0;
     }
 
     .prev,
     .next {
-        padding: 8px 20px;
-        font-size: 14px;
+        padding: 8px 14px;
+        font-size: 12px;
     }
 
     .page {
-        width: 36px;
-        height: 36px;
-        font-size: 14px;
+        width: 30px;
+        height: 30px;
+        font-size: 12px;
     }
 }
+
+
 
 /* Extra small phones (max 480px) - single column products */
 @media (max-width: 480px) {

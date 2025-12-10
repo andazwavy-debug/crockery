@@ -1127,6 +1127,14 @@ section.new-cta {
   }
 }
 
+@media (min-width: 953px) and (max-width: 1050px) {
+  .banner {
+    padding: 0px 30px;       /* reduce side padding */
+    height: 300px;           /* optional: adjust height */
+    justify-content: space-around;
+  }
+}
+
 /* cta-end */
 
 /* our product-start */
@@ -1461,7 +1469,7 @@ span.revrating {
 
 .testimonial-inner {
   display: flex;
-  align-items: center;
+  align-items: start;
   gap: 28px;
   max-width: 520px;
   margin: 0 auto;
@@ -1474,7 +1482,6 @@ span.revrating {
   overflow: hidden;
   flex-shrink: 0;
   border: 4px solid #fff;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
 }
 
 .testi-img img {
@@ -1494,14 +1501,15 @@ span.revrating {
 .stars {
   color: #ffb400;
   margin-bottom: 10px;
-  font-size: 16px;
-  letter-spacing: 1px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-style: normal;
 }
 
 .testi-content p {
-  color: #555;
+  color: #000000;
   line-height: 1.7;
-  font-size: 15px;
+  font-size: 18px;
   font-style: normal;
 }
 
