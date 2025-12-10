@@ -2215,7 +2215,7 @@ footer {
   }
 
   .footer-links {
-    flex-direction: column;
+    flex-direction: row;
     gap: 25px;
   }
 
@@ -2264,3 +2264,13 @@ footer {
 
 
 /* Footer-end */
+
+/* all-responsive 320px  */
+@media (max-width: 320px) {
+ .breadcrumb span.current {
+    color: #ececec;
+    font-size: 24px;
+    font-weight: 400;
+}
+}
+
